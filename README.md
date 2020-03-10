@@ -1,2 +1,51 @@
 # TelegramFileURLBot
 Telegram Bot (Client API) that sends a link to a file (and vice versa)
+
+## Getting Started
+
+1. Download or clone this repository
+2. Register on [Heroku](https://www.heroku.com/)
+3. Download and install [Heroku CLI](https://devcenter.heroku.com/articles/getting-started-with-python#set-up)
+4. Download and install [git](https://git-scm.com/downloads)
+5. On Heroku website, create a new app
+6. Open terminal
+
+   1. Login on Heroku
+   
+       ```bash
+       heroku login
+       ```
+
+   2. Clone the project
+
+      ```bash
+      git clone https://github.com/kernoeb/TelegramFileURLBot
+      cd TelegramFileURLBot
+      ```
+
+   3. Create a new Git repository, replace <NAMEOFYOURPROJECT> with your project name (yep)
+
+      ```bash
+      git init
+      heroku git:remote -a <NAMEOFYOURPROJECT>
+      ```      
+
+   4. Deploy your app
+
+      ```bash
+      git add *
+      git commit -m "initial commit"
+      git push heroku master
+      ```
+
+    5. Run a worker
+
+        ```bash
+        heroku ps:scale worker=1
+        ```
+
+    6. You can check your logs
+
+        ```bash
+        heroku logs --tail
+        ```
