@@ -1,7 +1,23 @@
 # TelegramFileURLBot
 Telegram Bot (Client API) that sends a link to a file (and vice versa)
 
-## Getting Started
+## Getting started
+
+### Python 3 / Pypy3
+
+1. Install dependencies
+```bash
+pip install -r requirements.txt
+```
+
+2. Run script
+```bash
+python client_bot.py
+```
+
+*Be careful to use Python3.X or PyPy3.X, not Python2.X* 
+
+### Heroku
 
 1. Download or clone this repository
 2. Register on [Heroku](https://www.heroku.com/)
@@ -16,7 +32,7 @@ Telegram Bot (Client API) that sends a link to a file (and vice versa)
        heroku login
        ```
 
-   2. Clone the project
+   2. Clone the project and jump into it
 
       ```bash
       git clone https://github.com/kernoeb/TelegramFileURLBot
