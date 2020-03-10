@@ -1,5 +1,8 @@
 # TelegramFileURLBot
-Telegram Bot (Client API) that sends a link to a file (and vice versa)
+Telegram Bot (Client API) that generates a link for a file (and vice versa)
+
+Client API : [telethon](https://github.com/LonamiWebs/Telethon)  
+Telethon is an asyncio Python 3 MTProto library to interact with Telegram's API as a user or through a bot account (bot API alternative)
 
 ## Getting started
 
